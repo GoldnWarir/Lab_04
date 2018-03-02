@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javescript" src="formChecker.js">
+  </script>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Start of the form -->
+
+<form action="customerBackend.php" method="post" onsubmit="return input_check()">
+
+<!-- Products -->
+
+<p>Product 1: A ninja sword! Price: $200</p><br>
+<input type="number" id="sword" name="Sword" min="0" step="1" value="0">
+
+<p>Product 2: A mech suit! Price: $5,000</p><br>
+<input type="number" id="mech" name="Mech" min="0" step="1" value="0">
+
+<p>Product 3: A University! Price:$100,000</p><br>
+<input type="number" id="school" name="School" min="0" step="1" value="0">
+
+
+<!-- Shipping options -->
+
+<p>Please select a shipping method</p>
+    <input type="radio" name="ship" id="7d" value="0" checked> Free 7-day shipping<br>
+    <input type="radio" name="ship" id="3d" value="5">$5.00 Three-day <br>
+    <input type="radio" name="ship" id="1d" value="50">$50.00 Overnight<br>
+
+    <br>
+    <br>
+
+<!-- Username and Password -->
+
+    <p> Enter a username and password.</p> <br>
+        <input type="text" id="username" name="username"> <br>
+
+        <input type="text" id="password" name="password"> <br>
+
+<!-- Reset and Submit buttons -->
+  <br><br>
+  <p id="info" style"color:blue"></p>
+
+        <button type="reset">Reset Form</button><br>
+        <input type="submit" value="Submit purchase">
+</form>
+
+</body>
+
+</html>
