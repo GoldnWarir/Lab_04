@@ -81,24 +81,7 @@ else
       echo "<td>$school_price</td>";
     }
 }
-/*
-      foreach($value as $read => $quantity)
-      {
-        if($read != "amount")
-        {
-          echo "<td>".$quantity."</td>";
-          $subtotal= $subtotal+$quantity;
-        }
-        else
-        {
-          echo "<td>$".$quantity."</td>";
-          $total = $total+$subtotal;
-        }
-      }
 
-      echo "<td>$".$subtotal."</td>";
-
-*/
 
     echo "</tr>";
 
